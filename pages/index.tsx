@@ -74,6 +74,28 @@ export default function Home() {
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
             </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={code} width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Web Development
+              </h3>
+              <p className="py-2">I’m excited to become a part of a quality-driven team to develop and create impactful user experiences by continuing to learn throughout each project we tackle as a team. </p>
+              <h4 className="py-4 text-teal-600">Languages I use</h4>
+              <p className="text-gray-800 py-1">Java</p>
+              <p className="text-gray-800 py-1">JavaScript</p>
+              <p className="text-gray-800 py-1">React</p>
+            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={consulting} width={100} height={100}/>
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Consulting
+              </h3>
+              <p className="py-2">Creating elegant designs suited for your needs following core design theory</p>
+              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="text-gray-800 py-1">Photoshop</p>
+              <p className="text-gray-800 py-1">Illustrator</p>
+              <p className="text-gray-800 py-1">Figma</p>
+            </div>
           </div>
         </section>
       </main>
