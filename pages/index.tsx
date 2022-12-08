@@ -32,10 +32,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-md">Colin Cargile</h2>
+            <h2 className="text-5xl py-2 text-teal-600 font-md">Colin M. Cargile</h2>
             <h3 className="text-2xl py-2">Developer and Photographer</h3>
             <p className="text-md py-5 leading-8 text-gray-800">
-              Passionate and solutions driven full stack web developer with a web development certificate from Columbia University Engineering School and a Java full stack development certificate from Southern Methodist University. Utilizing a combination of strong communication, collaboration, problem-solving and analytical skills to create projects from ideation to execution. Ability to work in a fast paced and diverse team environment developing solutions and exceeding expectations.
+              Passionate and solutions driven full stack web developer with a web development certificate from Columbia University Engineering School and a Java full stack development certificate from Southern Methodist University. Utilizing the skills of analysis, collaboration, communication and team problem solving to create projects from ideation to execution. Ability to work in a fast paced and diverse team environment developing solutions and exceeding expectations.
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
@@ -66,13 +66,13 @@ export default function Home() {
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={design} width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">
-                Beautiful Designs
+                Photography
               </h3>
               <p className="py-2">Creating elegant designs suited for your needs following core design theory</p>
               <h4 className="py-4 text-teal-600">Design Tools I use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
+              <p className="text-gray-800 py-1">Adobe Lightroom</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={code} width={100} height={100}/>
