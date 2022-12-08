@@ -1,6 +1,9 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
 import {AiFillLinkedin, AiFillInstagram, AiGithub, AiFillGithub} from "react-icons/ai";
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
+
 
 export default function Home() {
   return (
@@ -35,6 +38,9 @@ export default function Home() {
             <AiFillLinkedin />
             <AiFillInstagram />
             <AiFillGithub />
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20">
+            <Image src={deved} />
           </div>
         </section>
       </main>
