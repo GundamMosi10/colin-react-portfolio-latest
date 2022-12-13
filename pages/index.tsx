@@ -40,86 +40,74 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-md md:text-6xl">
+            <h2 className="text-5xl py-2 text-teal-600 font-burtons font-md md:text-6xl">
               Colin M. Cargile
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl dark:text-white">
+            <h3 className="text-2xl font-burtons py-2 md:text-3xl dark:text-white">
               Developer and Photographer
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white">
               Passionate and solutions driven full stack web developer with a web development certificate from Columbia University Engineering School and a Java full stack development certificate from Southern Methodist University. Utilizing the skills of analysis, collaboration, communication and team problem solving to create projects from ideation to execution. Ability to work in a fast paced and diverse team environment developing solutions and exceeding expectations.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
-            <a href="https://www.linkedin.com/in/colin-cargile-71b289166">
-            <AiFillLinkedin />
-            </a>
-          </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
-            <a href="https://github.com/GundamMosi10">
-            <AiFillGithub />
-            </a>
-          </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
-            <a href="https://www.instagram.com/colinmosi/">
-            <AiFillInstagram />
-            </a>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+            <div className="cursor-pointer">
+              <a href="https://www.linkedin.com/in/colin-cargile-71b289166">
+              <AiFillLinkedin />
+              </a>
+            </div>
+            <div className="cursor-pointer">
+              <a href="https://github.com/GundamMosi10">
+              <AiFillGithub />
+              </a>
+            </div>
+            <div className="cursor-pointer">
+              <a href="https://www.instagram.com/colinmosi/">
+              <AiFillInstagram />
+              </a>
+            </div>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover"/>
           </div>
         </section>
-        
         <section>
           <div>
-            <h3 className="text-2xl py-1 dark:text-white">
-              Services I offer
-            </h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
-              Since the beginning of my journey as a freelance developer, I've done remote work for
-              <span className="text-teal-500"> agencies</span> consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talented people to create digital products for both business and consumer use.
-            </p>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
-              I offer from a wide range of services, including programming and teaching to merchandising and management.
-            </p>
+              <h3 className="text-center text-2xl font-burtons py-8 md:text-3xl dark:text-white">
+                Services I offer
+              </h3>
           </div>
           <div className="lg:flex gap-10">
-          <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={code} width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Web Development
-              </h3>
-              <p className="py-2 dark:text-white">I’m excited to become a part of a quality-driven team to develop and create impactful user experiences by continuing to learn throughout each project we tackle as a team. </p>
-              <h4 className="py-4 text-teal-600">Technologies</h4>
-              <p className="text-gray-800 py-1 dark:text-white">Java</p>
-              <p className="text-gray-800 py-1 dark:text-white">JavaScript</p>
-              <p className="text-gray-800 py-1 dark:text-white">React</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={design} width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Photography
-              </h3>
-              <p className="py-2 dark:text-white">Creating elegant photographs suited for your needs</p>
-              <h4 className="py-4 text-teal-600">Photography Tools I use</h4>
-              <p className="text-gray-800 py-1 dark:text-white">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-white">Illustrator</p>
-              <p className="text-gray-800 py-1 dark:text-white">Adobe Lightroom</p>
-            </div>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 flex-1">
+                <Image src={code} width={100} height={100}/>
+                <h3 className="text-lg font-burtons font-medium pt-8 pb-2 dark:text-white">
+                  Web Development
+                </h3>
+                <p className="py-2 dark:text-white">I’m excited to become a part of a quality-driven team to develop and create impactful user experiences by continuing to learn throughout each project we tackle as a team. </p>
+                <h4 className="py-4 text-teal-600">Technologies</h4>
+                <p className="text-gray-800 py-1 dark:text-white">Java</p>
+                <p className="text-gray-800 py-1 dark:text-white">SpringBoot</p>
+                <p className="text-gray-800 py-1 dark:text-white">JavaScript</p>
+                <p className="text-gray-800 py-1 dark:text-white">React</p>
+              </div>
+              <div className="text-center shadow-lg p-10 rounded-xl my-10 basis-1/3 flex-1">
+                <Image src={design} width={100} height={100}/>
+                <h3 className="text-lg font-burtons font-medium pt-8 pb-2 dark:text-white">
+                  Photography
+                </h3>
+                <p className="py-2 dark:text-white">Creating elegant photographs suited for your needs</p>
+                <h4 className="py-4 text-teal-600">Photography Tools I use</h4>
+                <p className="text-gray-800 py-1 dark:text-white">Photoshop</p>
+                <p className="text-gray-800 py-1 dark:text-white">Illustrator</p>
+                <p className="text-gray-800 py-1 dark:text-white">Adobe Lightroom</p>
+              </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white">Portfolio</h3>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
-              Since the beginning of my journey as a freelance developer, I've done remote work for
-              <span className="text-teal-500"> agencies</span> consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talented people to create digital products for both business and consumer use.
-            </p>
-            <p className="text-md py-5 leading-8 text-gray-800 dark:text-white">
-              I offer from a wide range of services, including programming and teaching to merchandising and management.
-            </p>
+            <h3 className="text-3xl font-burtons py-1 dark:text-white">
+              Portfolio
+            </h3>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1">
