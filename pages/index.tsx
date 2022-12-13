@@ -5,7 +5,6 @@ import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
 import design from '../public/design.png';
 import code from '../public/code.png';
-import consulting from '../public/consulting.png';
 import web1 from '../public/web1.png';
 import web2 from '../public/web2.png';
 import web3 from '../public/web3.png';
@@ -51,10 +50,20 @@ export default function Home() {
               Passionate and solutions driven full stack web developer with a web development certificate from Columbia University Engineering School and a Java full stack development certificate from Southern Methodist University. Utilizing the skills of analysis, collaboration, communication and team problem solving to create projects from ideation to execution. Ability to work in a fast paced and diverse team environment developing solutions and exceeding expectations.
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white">
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
+            <a href="https://www.linkedin.com/in/colin-cargile-71b289166">
             <AiFillLinkedin />
-            <AiFillInstagram />
+            </a>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
+            <a href="https://github.com/GundamMosi10">
             <AiFillGithub />
+            </a>
+          </div>
+          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-white cursor-pointer">
+            <a href="https://www.instagram.com/colinmosi/">
+            <AiFillInstagram />
+            </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover"/>
@@ -76,18 +85,7 @@ export default function Home() {
             </p>
           </div>
           <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={design} width={100} height={100}/>
-              <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Photography
-              </h3>
-              <p className="py-2 dark:text-white">Creating elegant designs suited for your needs following core design theory</p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
-              <p className="text-gray-800 py-1 dark:text-white">Photoshop</p>
-              <p className="text-gray-800 py-1 dark:text-white">Illustrator</p>
-              <p className="text-gray-800 py-1 dark:text-white">Adobe Lightroom</p>
-            </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+          <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={code} width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
                 Web Development
@@ -99,15 +97,15 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">React</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
-              <Image src={consulting} width={100} height={100}/>
+              <Image src={design} width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-white">
-                Consulting
+                Photography
               </h3>
-              <p className="py-2 dark:text-white">Creating elegant designs suited for your needs following core design theory</p>
-              <h4 className="py-4 text-teal-600">Design Tools I use</h4>
+              <p className="py-2 dark:text-white">Creating elegant photographs suited for your needs</p>
+              <h4 className="py-4 text-teal-600">Photography Tools I use</h4>
               <p className="text-gray-800 py-1 dark:text-white">Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-white">Illustrator</p>
-              <p className="text-gray-800 py-1 dark:text-white">Figma</p>
+              <p className="text-gray-800 py-1 dark:text-white">Adobe Lightroom</p>
             </div>
           </div>
         </section>
