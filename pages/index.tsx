@@ -1,12 +1,17 @@
 import Head from 'next/head';
 import {BsFillMoonStarsFill} from 'react-icons/bs';
-import {AiFillLinkedin, AiFillInstagram, AiGithub, AiFillGithub} from "react-icons/ai";
+import {AiFillLinkedin, AiFillInstagram, AiFillGithub} from "react-icons/ai";
 import Image from "next/image";
 import deved from "../public/dev-ed-wave.png";
 import design from '../public/design.png';
 import code from '../public/code.png';
 import consulting from '../public/consulting.png';
-
+import web1 from '../public/web1.png';
+import web2 from '../public/web2.png';
+import web3 from '../public/web3.png';
+import web4 from '../public/web4.png';
+import web5 from '../public/web5.png';
+import web6 from '../public/web6.png';
 
 
 export default function Home() {
@@ -18,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-white px-10">
+      <main className="bg-white px-10 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Developed By</h1>
@@ -32,9 +37,13 @@ export default function Home() {
             </ul>
           </nav>
           <div className="text-center py-10">
-            <h2 className="text-5xl py-2 text-teal-600 font-md">Colin M. Cargile</h2>
-            <h3 className="text-2xl py-2">Developer and Photographer</h3>
-            <p className="text-md py-5 leading-8 text-gray-800">
+            <h2 className="text-5xl py-2 text-teal-600 font-md md:text-6xl">
+              Colin M. Cargile
+            </h2>
+            <h3 className="text-2xl py-2 md:text-3xl">
+              Developer and Photographer
+            </h3>
+            <p className="text-md py-5 leading-8 text-gray-800 md:text-xl">
               Passionate and solutions driven full stack web developer with a web development certificate from Columbia University Engineering School and a Java full stack development certificate from Southern Methodist University. Utilizing the skills of analysis, collaboration, communication and team problem solving to create projects from ideation to execution. Ability to work in a fast paced and diverse team environment developing solutions and exceeding expectations.
             </p>
           </div>
@@ -43,7 +52,7 @@ export default function Home() {
             <AiFillInstagram />
             <AiFillGithub />
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
             <Image src={deved} layout="fill" objectFit="cover"/>
           </div>
         </section>
@@ -62,7 +71,7 @@ export default function Home() {
               I offer from a wide range of services, including programming and teaching to merchandising and management.
             </p>
           </div>
-          <div>
+          <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10">
               <Image src={design} width={100} height={100}/>
               <h3 className="text-lg font-medium pt-8 pb-2">
@@ -80,7 +89,7 @@ export default function Home() {
                 Web Development
               </h3>
               <p className="py-2">I’m excited to become a part of a quality-driven team to develop and create impactful user experiences by continuing to learn throughout each project we tackle as a team. </p>
-              <h4 className="py-4 text-teal-600">Languages I use</h4>
+              <h4 className="py-4 text-teal-600">Technologies</h4>
               <p className="text-gray-800 py-1">Java</p>
               <p className="text-gray-800 py-1">JavaScript</p>
               <p className="text-gray-800 py-1">React</p>
@@ -95,6 +104,39 @@ export default function Home() {
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">Portfolio</h3>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              Since the beginning of my journey as a freelance developer, I've done remote work for
+              <span className="text-teal-500"> agencies</span> consulted for <span className="text-teal-500">startups </span>
+              and collaborated with talented people to create digital products for both business and consumer use.
+            </p>
+            <p className="text-md py-5 leading-8 text-gray-800">
+              I offer from a wide range of services, including programming and teaching to merchandising and management.
+            </p>
+          </div>
+          <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
+            <div className="basis-1/3 flex-1">
+              <Image src={web1} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image src={web2} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image src={web3} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image src={web4} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image src={web5} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"></Image>
+            </div>
+            <div className="basis-1/3 flex-1">
+              <Image src={web6} className="rounded-lg object-cover" width={'100%'} height={'100%'} layout="responsive"></Image>
             </div>
           </div>
         </section>
